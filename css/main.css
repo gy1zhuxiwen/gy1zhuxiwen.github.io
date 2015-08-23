@@ -492,15 +492,15 @@ td {
   opacity: 0;
 }
 @font-face {
-  font-family: 'default';
-  src: url("../fonts/icon-default/icomoon.eot?-9394c0");
-  src: url("../fonts/icon-default/icomoon.eot?#iefix-9394c0") format('embedded-opentype'), url("../fonts/icon-default/icomoon.woff?-9394c0") format('woff'), url("../fonts/icon-default/icomoon.ttf?-9394c0") format('truetype'), url("../fonts/icon-default/icomoon.svg?-9394c0#default") format('svg');
+  font-family: 'material';
+  src: url("../fonts/icon-material/icomoon.eot?-9394c0");
+  src: url("../fonts/icon-material/icomoon.eot?#iefix-9394c0") format('embedded-opentype'), url("../fonts/icon-material/icomoon.woff?-9394c0") format('woff'), url("../fonts/icon-material/icomoon.ttf?-9394c0") format('truetype'), url("../fonts/icon-material/icomoon.svg?-9394c0#material") format('svg');
   font-weight: normal;
   font-style: normal;
 }
 [class^="icon-"],
 [class*=" icon-"] {
-  font-family: 'default';
+  font-family: 'material';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -531,6 +531,10 @@ td {
 .icon-next-heart {
   font-size: 14px;
 }
+.icon-create:before,
+.icon-next-create:before {
+  content: "\e074";
+}
 .icon-storage:before,
 .icon-next-categories:before {
   content: "\e0bc";
@@ -542,6 +546,10 @@ td {
 .icon-brightness_4:before,
 .icon-next-logo:before {
   content: "\e13e";
+}
+.icon-local_library:before,
+.icon-next-welcome:before {
+  content: "\e1e3";
 }
 .icon-whatshot:before,
 .icon-next-feed:before {
@@ -1055,7 +1063,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff8f;
+  background: #cc71b9;
 }
 .sidebar-nav {
   margin: 0;
@@ -2191,4 +2199,15 @@ ul li {
   max-width: 100%;
   width: auto;
   margin: 0;
+}
+.copyright,
+.welcome-info {
+  display: inline-block;
+}
+.welcome-info {
+  margin-left: 10px;
+}
+.welcome-info::before {
+  content: "|";
+  padding-right: 10px;
 }
